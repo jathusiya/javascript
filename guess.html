@@ -1,0 +1,23 @@
+<h1>Guess the Number</h1>
+
+<input id="check1"> <button onclick="gess()">Check</button>
+<P id="result">you are correct/wrong</P>
+
+<script>
+    var a= document.getElementById("check1")
+    var b= document.getElementById("result")
+   
+    var x = 3
+    var random = Math.floor(Math.random()*2)+1
+    function gess(){
+        var guess = a.value
+        if(random==guess){
+            b.textContent="you are right"
+            alert("you won.")
+        } 
+        else
+        {
+            b.textContent="you are wrong"
+        }
+    }
+</script>

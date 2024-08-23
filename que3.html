@@ -1,0 +1,13 @@
+<h1 id ="h1">Name</h1>
+<button  onclick="clic(event)"> John</button>
+<button  onclick="clic(event)">Hari</button>
+<button  onclick="clic(event)">Pravee</button>
+
+<script>
+    var d = document.getElementById("h1")
+
+    function clic(event){
+        d.textContent = event.target.textContent
+        
+    }
+</script>

@@ -1,0 +1,31 @@
+<!-- insertAdjacentElement -->
+ <div id="bok">
+    <p>Hello jja</p>
+ </div>
+ <script>
+    var h1Ele = document.createElement("h1")
+    h1Ele.innerHTML ="Bye"
+    var divBox = document.getElementById("bok")
+    divBox.insertAdjacentElement("beforebegin", h1Ele)
+ </script>
+
+<!-- 
+    <h1 class="ok">one</h1>
+    <h1 class="ok">Two</h1>
+    <h1 class="ok">Three</h1>
+
+<script>
+    var div =document.querySelectorAll(".ok")
+    for(count=0; count<div.length;count++)
+    console.log(div[count].textContent)
+</script> -->
+
+<!-- prepend -->
+<!-- <div>
+    <h1>John</h1>
+</div>
+<script>
+    var div = document.querySelector("div")
+    div.append("Hello")
+    div.prepend("Hello")
+</script> -->
